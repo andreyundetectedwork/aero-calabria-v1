@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="sr" class="scroll-smooth">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero Calabria | Restoran & Pizzeria Podgorica</title>
+  <meta name="description" content="Aero Calabria - Autentična pizza, roštilj i primorski specijaliteti u Podgorici. Ćemovsko polje.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.a2003d1d.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
+</head>
+<body class="bg-stone-950 text-stone-200 font-sans antialiased selection:bg-amber-700 selection:text-white">
+
+  <!-- TOP BAR / HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-stone-950/80 border-b border-stone-800/60" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="font-serif text-2xl font-bold tracking-wider text-amber-500 group-hover:text-amber-400 transition-colors uppercase">Aero Calabria</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+        <a href="#about" class="text-stone-300 hover:text-amber-400 transition-colors" data-i18n="nav.about">O nama</a>
+        <a href="#menu" class="text-stone-300 hover:text-amber-400 transition-colors" data-i18n="nav.menu">Jelovnik</a>
+        <a href="#story" class="text-stone-300 hover:text-amber-400 transition-colors" data-i18n="nav.story">Mocarela priča</a>
+        <a href="#reviews" class="text-stone-300 hover:text-amber-400 transition-colors" data-i18n="nav.reviews">Utisci</a>
+        <a href="#contact" class="text-stone-300 hover:text-amber-400 transition-colors" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+
+      <!-- Language & Order CTA -->
+      <div class="hidden md:flex items-center gap-4">
+        <div class="flex items-center border border-stone-800 rounded-full bg-stone-900/80 p-1 text-xs font-bold">
+          <button class="lang-btn active px-3 py-1.5 rounded-full transition-all" data-lang="sr">SR</button>
+          <button class="lang-btn px-3 py-1.5 rounded-full transition-all text-stone-400 hover:text-white" data-lang="en">EN</button>
+          <button class="lang-btn px-3 py-1.5 rounded-full transition-all text-stone-400 hover:text-white" data-lang="ru">RU</button>
+        </div>
+        <a href="https://glovoapp.com/sr/me/podgorica/stores/aero-calabria-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener noreferrer" class="btn-glow px-5 py-2.5 rounded-full bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold text-sm transition-all shadow-lg shadow-amber-900/30 flex items-center gap-2">
+          <span>Glovo</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Burger -->
+      <div class="flex md:hidden items-center gap-3">
+        <div class="flex items-center border border-stone-800 rounded-full bg-stone-900 p-0.5 text-xs font-bold">
+          <button class="lang-btn active px-2 py-1 rounded-full" data-lang="sr">SR</button>
+          <button class="lang-btn px-2 py-1 rounded-full text-stone-400" data-lang="en">EN</button>
+          <button class="lang-btn px-2 py-1 rounded-full text-stone-400" data-lang="ru">RU</button>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle menu" class="p-2 text-stone-200 focus:outline-none">
+          <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="hidden md:hidden bg-stone-950/95 border-b border-stone-800 px-6 py-6 flex flex-col gap-4 text-center">
+      <a href="#about" class="mobile-nav-link text-lg text-stone-300 py-2 border-b border-stone-900" data-i18n="nav.about">O nama</a>
+      <a href="#menu" class="mobile-nav-link text-lg text-stone-300 py-2 border-b border-stone-900" data-i18n="nav.menu">Jelovnik</a>
+      <a href="#story" class="mobile-nav-link text-lg text-stone-300 py-2 border-b border-stone-900" data-i18n="nav.story">Mocarela priča</a>
+      <a href="#reviews" class="mobile-nav-link text-lg text-stone-300 py-2 border-b border-stone-900" data-i18n="nav.reviews">Utisci</a>
+      <a href="#contact" class="mobile-nav-link text-lg text-stone-300 py-2" data-i18n="nav.contact">Kontakt</a>
+      <a href="https://glovoapp.com/sr/me/podgorica/stores/aero-calabria-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener noreferrer" class="mt-2 w-full py-3 rounded-full bg-amber-600 text-stone-950 font-bold flex items-center justify-center gap-2">
+        <span>Glovo Dostava</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen pt-24 pb-16 flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/img_01.jpg" alt="Aero Calabria Ambijent" class="w-full h-full object-cover object-center brightness-[0.38] scale-105 transition-transform duration-1000" id="hero-bg">
+      <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-950/40 backdrop-blur-md mb-6 text-amber-400 text-sm font-semibold tracking-wider uppercase">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+        <span data-i18n="hero.subtitle">Ćemovsko polje • Podgorica</span>
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-stone-100 mb-6 leading-tight">
+        <span data-i18n="hero.title1">Drevni ambijent.</span><br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600" data-i18n="hero.title2">Neprikosnoveni ukusi.</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-lg sm:text-xl text-stone-300 font-light mb-10 leading-relaxed" data-i18n="hero.desc">
+        Mesto gde se susreću tradicija pečenja ispod sača i na pici sa prirodnim kamenom, domaći roštilj i gostoprimstvo koje se pamti.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold text-base transition-all shadow-xl shadow-amber-900/40 transform hover:-translate-y-0.5" data-i18n="hero.btnMenu">
+          Pogledaj jelovnik
+        </a>
+        <a href="tel:+38269880099" class="w-full sm:w-auto px-8 py-4 rounded-full border border-stone-700 bg-stone-900/60 hover:bg-stone-800 text-stone-200 font-semibold text-base backdrop-blur-md transition-all flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+382 69 880 099</span>
+        </a>
+      </div>
+
+      <!-- Rating Pill -->
+      <div class="mt-12 inline-flex items-center gap-4 px-6 py-3 rounded-2xl bg-stone-900/80 border border-stone-800 backdrop-blur-md">
+        <div class="flex items-center text-amber-400 gap-1 text-lg">
+          ★ <span class="font-bold text-white">4.7</span>
+        </div>
+        <div class="h-4 w-px bg-stone-700"></div>
+        <div class="text-sm text-stone-400">
+          <span class="text-stone-200 font-semibold">130+</span> <span data-i18n="hero.reviewsCount">recenzija posetilaca</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE & PHOTO GRID -->
+  <section id="about" class="py-20 bg-stone-900/40 border-y border-stone-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-100 mb-4" data-i18n="about.title">Tootaz Oaza Van Gradske Gužve</h2>
+        <p class="text-stone-400 text-lg leading-relaxed" data-i18n="about.subtitle">
+          Na korak od Podgorice, u miru Ćemovskog polja, napravili smo skrovište koje odiše duhom starinskih konoba.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="group relative rounded-2xl overflow-hidden border border-stone-800 bg-stone-900 aspect-[4/3] md:aspect-[3/4]">
+          <img src="assets/img_02.jpg" alt="Sveže pečena pica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <h3 class="font-serif text-xl font-bold text-amber-400 mb-1" data-i18n="about.card1.title">Pice na kamenu</h3>
+            <p class="text-stone-300 text-sm" data-i18n="about.card1.desc">Hrskavo testo, sveži sastojci i autentične recepture.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden border border-stone-800 bg-stone-900 aspect-[4/3] md:aspect-[3/4]">
+          <img src="assets/img_03.jpg" alt="Sočni roštilj" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <h3 class="font-serif text-xl font-bold text-amber-400 mb-1" data-i18n="about.card2.title">Domaći Roštilj</h3>
+            <p class="text-stone-300 text-sm" data-i18n="about.card2.desc">Krompir, kajmak, dimljene kobasice i biftek po vašoj meri.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden border border-stone-800 bg-stone-900 aspect-[4/3] md:aspect-[3/4]">
+          <img src="assets/img_04.jpg" alt="Bašta pod otvorenim nebom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <h3 class="font-serif text-xl font-bold text-amber-400 mb-1" data-i18n="about.card3.title">Letnja bašta</h3>
+            <p class="text-stone-300 text-sm" data-i18n="about.card3.desc">Uživajte u zelenilu, čistom vazduhu i potpunom miru.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-amber-500 font-semibold tracking-widest text-xs uppercase" data-i18n="menu.tag">Aero Calabria Meni</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100 mt-2 mb-4" data-i18n="menu.title">Jelovnik & Specijaliteti</h2>
+      <p class="text-stone-400" data-i18n="menu.subtitle">Sve cene su izražene u € (EUR). Knjiga utisaka/ž žalbi nalazi se na šanku.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-none no-scrollbar justify-start md:justify-center" id="menu-tabs">
+      <button class="menu-tab-btn active px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-amber-600 bg-amber-600 text-stone-950" data-cat="all" data-i18n="menu.tabs.all">Sve 🍽️</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="pizza" data-i18n="menu.tabs.pizza">Pice 🍕</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="grill" data-i18n="menu.tabs.grill">Roštilj 🥩</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="pasta" data-i18n="menu.tabs.pasta">Pašte & Pečeno 🍝</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="appetizers" data-i18n="menu.tabs.appetizers">Predjela & Obrok Salate 🥗</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="deserts" data-i18n="menu.tabs.deserts">Poslasticama 🍰</button>
+      <button class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all border border-stone-800 bg-stone-900 text-stone-300 hover:border-stone-700" data-cat="drinks" data-i18n="menu.tabs.drinks">Pića & Pivo 🍻</button>
+    </div>
+
+    <!-- Menu Render Container -->
+    <div id="menu-container" class="space-y-16">
+      <!-- Dynamic rendering via JS for clean multi-lang support -->
+    </div>
+  </section>
+
+  <!-- MOZZARELLA STORY FEATURE SECTION -->
+  <section id="story" class="py-20 bg-stone-900/60 border-y border-stone-800 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-gradient-to-br from-stone-900 to-stone-950 p-8 sm:p-12 rounded-3xl border border-stone-800/80 shadow-2xl">
+        <div class="flex items-center gap-3 text-amber-500 mb-4">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg>
+          <span class="font-semibold tracking-wider text-sm uppercase" data-i18n="story.tag">Priča iz naše kuhinje</span>
+        </div>
+
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-100 mb-6" data-i18n="story.title">Sve o Mocareli 🧀</h2>
+
+        <div class="prose prose-invert max-w-none text-stone-300 space-y-4 text-base leading-relaxed" id="mozzarella-text">
+          <!-- Multi-lang content injected via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-amber-500 font-semibold tracking-widest text-xs uppercase" data-i18n="reviews.tag">Gostoprimstvo na prvom mestu</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100 mt-2 mb-4" data-i18n="reviews.title">Reči Naših Gostiju</h2>
+      <p class="text-stone-400" data-i18n="reviews.subtitle">Pročitajte utiske posetilaca i putnika koji su nas posetili.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="reviews-container">
+      <!-- Reviews injected via JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION -->
+  <section id="contact" class="py-24 bg-stone-900/50 border-t border-stone-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- Contact Info Card -->
+        <div class="bg-stone-900 p-8 sm:p-10 rounded-3xl border border-stone-800 space-y-8">
+          <div>
+            <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase" data-i18n="contact.tag">Dobrodošli</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-100 mt-1" data-i18n="contact.title">Lokacija i Radno Vreme</h2>
+          </div>
+
+          <div class="space-y-6 text-stone-300">
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-amber-950/60 border border-amber-800/40 rounded-2xl text-amber-500 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white mb-1" data-i18n="contact.addressTitle">Adresa</h4>
+                <p class="text-stone-400">Ćemovsko polje, Podgorica 81000, Crna Gora</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-amber-950/60 border border-amber-800/40 rounded-2xl text-amber-500 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white mb-1" data-i18n="contact.phoneTitle">Telefon za rezervacije</h4>
+                <a href="tel:+38269880099" class="text-amber-400 hover:text-amber-300 text-lg font-bold transition-colors">+382 69 880 099</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-amber-950/60 border border-amber-800/40 rounded-2xl text-amber-500 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white mb-1" data-i18n="contact.hoursTitle">Radno Vreme</h4>
+                <p class="text-stone-400" data-i18n="contact.hoursVal">Ponedeljak – Nedelja: 08:00 – 23:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-stone-800 flex flex-wrap gap-4">
+            <a href="tel:+38269880099" class="flex-1 py-3 px-6 rounded-2xl bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold text-center transition-all">
+              <span data-i18n="contact.btnCall">Pozovi Odmah</span>
+            </a>
+            <a href="https://glovoapp.com/sr/me/podgorica/stores/aero-calabria-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-6 rounded-2xl border border-stone-700 bg-stone-800 hover:bg-stone-700 text-white font-bold text-center transition-all">
+              <span>Naruči preko Glovo</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Embed -->
+        <div class="h-full min-h-[400px] rounded-3xl overflow-hidden border border-stone-800 bg-stone-900 relative">
+          <iframe 
+            title="Aero Calabria Map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8!2d19.28!3d42.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d830000000001%3A0x0!2zQ8OlbW92c2tvIHBvbGplLCBQb2Rnb3JpY2E!5e0!3m2!1sen!2sme!4v1680000000000!5m2!1sen!2sme" 
+            class="w-full h-full min-h-[400px] border-0 filter grayscale invert contrast-125 opacity-80 hover:opacity-100 transition-opacity" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 border-t border-stone-800/60 py-12 text-stone-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <span class="font-serif text-2xl font-bold text-amber-500 uppercase tracking-wider">Aero Calabria</span>
+        <p class="text-sm text-stone-500 mt-1">Ćemovsko polje, Podgorica 81000, Montenegro</p>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="https://www.instagram.com/aero_calabria/" target="_blank" rel="noopener noreferrer" class="p-3 bg-stone-900 rounded-full border border-stone-800 text-stone-300 hover:text-amber-400 hover:border-amber-500/50 transition-all" aria-label="Instagram">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+
+      <p class="text-xs text-stone-600">
+        © <span id="year"></span> Aero Calabria. Sva prava zadržana.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.9b8f45ed.js"></script>
+</body>
+</html>

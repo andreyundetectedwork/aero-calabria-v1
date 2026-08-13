@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+::-webkit-scrollbar-thumb {
+  background: #292524;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Hide Scrollbar helper */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Language buttons active state */
+.lang-btn.active {
+  background-color: #d97706;
+  color: #0c0a09;
+}
+
+/* Custom glow effect */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(217, 119, 6, 0.35);
+}
+.btn-glow:hover {
+  box-shadow: 0 0 28px rgba(217, 119, 6, 0.55);
+}
+
+/* Menu card subtle animation */
+.menu-card {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.menu-card:hover {
+  border-color: rgba(217, 119, 6, 0.4);
+  transform: translateY(-2px);
+}
